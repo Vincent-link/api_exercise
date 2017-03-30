@@ -1,0 +1,14 @@
+<p>sessionId:<%= @sessionId %></p>
+
+
+<p>word:<%= @word %></p>
+<p>totalWordCount:<%= @totalWordCount %></p>
+<p>wrongGuessCountOfCurrentWord:<%= @wrongGuessCountOfCurrentWord %></p>
+
+<a href="/cities/guess">Make A Guess</a>
+
+<form action="/cities/guess" method="post">
+  输入要猜的字母<input name="guess" type="text" value="">
+  <input name="authenticity_token" type="hidden" value="token_value">
+  <input name="submit" type="submit" value="Submit">
+</form>
